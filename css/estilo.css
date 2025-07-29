@@ -211,3 +211,17 @@ footer {
   width: 24px;
   margin: 0 5px;
 }
+.f main,
+.f main * {
+  color: white !important;
+}
+
+.l main,
+.l main * {
+  color: white !important;
+}
+
+.m main,
+.m main * {
+  color: white !important;
+}
