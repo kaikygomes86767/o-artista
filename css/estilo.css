@@ -1,45 +1,212 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins&display=swap');
 
 body {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-header, #principal, #second, #contato, #stream {
-	
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+#logo img {
+  width: 60px;
+}
+
+#menu {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
 }
 
 .link-menu {
+  text-decoration: none;
   color: #fff;
   background-color: #555;
+  padding: 0.5em 1em;
+  border-radius: 5px;
 }
 
-.f {
+.link-menu.f {
   background-color: #5b305a;
 }
 
-.l {
+.link-menu.l {
   background-color: #e49756;
 }
 
-.m {
+.link-menu.m {
   background-color: #e04b5a;
 }
 
+/* ESTILO DAS SEÇÕES */
 main {
-  background-color: #333;
-  color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  gap: 3em;
 }
 
-h1, h2 {
-  font-family: 'Amatic SC';
+main img#capa {
+  width: 250px;
+  border-radius: 8px;
 }
 
-#second a{
+#sec_ctd {
+  max-width: 500px;
   color: #fff;
 }
 
-footer {
+.f main {
+  background-color: #5b305a;
+}
+
+.l main {
+  background-color: #e49756;
+  color: #fff;
+}
+
+.m main {
+  background-color: #e04b5a;
+  color: #fff;
+}
+
+main h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5em;
+}
+
+/* INDEX */
+main:not(.f):not(.l):not(.m) {
   background-color: #333;
   color: #ddd;
 }
 
+#principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding: 2em;
+}
+
+#principal img {
+  width: 250px;
+  border-radius: 5px;
+}
+
+#second {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 2em;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.cartaz {
+  text-decoration: none;
+}
+
+.capa {
+  width: 180px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* FILME */
+#acesso.f {
+  background-color: #5b305a;
+  color: white;
+  padding: 2em;
+  font-family: 'Amatic SC';
+  font-size: 1.2em;
+  border-radius: 12px;
+  text-align: center;
+}
+
+#acesso.f a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/* LIVRO */
+#acesso.l {
+  background-color: #e49756;
+  color: white;
+  padding: 2em;
+  font-family: 'Amatic SC';
+  font-size: 1.5em;
+  border-radius: 12px;
+  text-align: center;
+}
+
+#acesso.l a {
+  color: white;
+  background-color: #e49756;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  display: inline-block;
+  margin-top: 1em;
+  border-radius: 8px;
+}
+
+/* MÚSICA */
+#acesso.m {
+  background-color: #e04b5a;
+  color: white;
+  padding: 2em;
+  font-family: 'Amatic SC';
+  border-radius: 12px;
+  text-align: center;
+}
+
+#acesso.m img {
+  width: 32px;
+  margin: 0 10px;
+}
+
+/* Tabelas de conteúdo */
+#descricao {
+  background-color: white;
+  padding: 2em;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  color: black;
+  max-width: 400px;
+}
+
+#descricao h3 {
+  font-family: 'Amatic SC';
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #ddd;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#email a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+#social img {
+  width: 24px;
+  margin: 0 5px;
+}
