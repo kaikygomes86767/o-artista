@@ -62,7 +62,7 @@ main img#capa {
   max-width: 500px;
 }
 
-/* Aplicar fundo e cor com base na classe do body */
+
 body.f main {
   background-color: #5b305a;
   color: white;
@@ -78,7 +78,7 @@ body.m main {
   color: white;
 }
 
-/* Garante que os filhos também recebam a cor branca */
+
 body.f main *,
 body.l main *,
 body.m main * {
@@ -90,7 +90,7 @@ main h1 {
   font-size: 2.5em;
 }
 
-/* INDEX */
+
 main:not(.f):not(.l):not(.m) {
   background-color: #333;
   color: #ddd;
@@ -128,7 +128,7 @@ main:not(.f):not(.l):not(.m) {
   border-radius: 4px;
 }
 
-/* FILME */
+
 #acesso.f {
   background-color: #5b305a;
   color: white;
@@ -146,7 +146,7 @@ main:not(.f):not(.l):not(.m) {
   margin-bottom: 0.5em;
 }
 
-/* LIVRO */
+
 #acesso.l {
   background-color: #e49756;
   color: white;
@@ -167,7 +167,7 @@ main:not(.f):not(.l):not(.m) {
   border-radius: 8px;
 }
 
-/* MÚSICA */
+
 #acesso.m {
   background-color: #e04b5a;
   color: white;
@@ -182,7 +182,7 @@ main:not(.f):not(.l):not(.m) {
   margin: 0 10px;
 }
 
-/* Tabelas de conteúdo */
+
 #descricao {
   background-color: white;
   padding: 2em;
@@ -198,7 +198,7 @@ main:not(.f):not(.l):not(.m) {
   margin-bottom: 1em;
 }
 
-/* Rodapé */
+
 footer {
   background-color: #333;
   color: #ddd;
