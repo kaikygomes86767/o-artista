@@ -60,21 +60,29 @@ main img#capa {
 
 #sec_ctd {
   max-width: 500px;
-  color: #fff;
 }
 
-.f main {
+/* Aplicar fundo e cor com base na classe do body */
+body.f main {
   background-color: #5b305a;
+  color: white;
 }
 
-.l main {
+body.l main {
   background-color: #e49756;
-  color: #fff;
+  color: white;
 }
 
-.m main {
+body.m main {
   background-color: #e04b5a;
-  color: #fff;
+  color: white;
+}
+
+/* Garante que os filhos também recebam a cor branca */
+body.f main *,
+body.l main *,
+body.m main * {
+  color: white !important;
 }
 
 main h1 {
@@ -210,4 +218,5 @@ footer {
   width: 24px;
   margin: 0 5px;
 }
+
 
