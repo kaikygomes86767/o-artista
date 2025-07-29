@@ -44,7 +44,7 @@ header {
   background-color: #e04b5a;
 }
 
-
+/* ESTILO DAS SEÇÕES */
 main {
   display: flex;
   justify-content: center;
@@ -65,16 +65,17 @@ main img#capa {
 
 .f main {
   background-color: #5b305a;
+  color: white;
 }
 
 .l main {
   background-color: #e49756;
-  color: #fff;
+  color: white;
 }
 
 .m main {
   background-color: #e04b5a;
-  color: #fff;
+  color: white;
 }
 
 main h1 {
@@ -82,7 +83,7 @@ main h1 {
   font-size: 2.5em;
 }
 
-
+/* INDEX */
 main:not(.f):not(.l):not(.m) {
   background-color: #333;
   color: #ddd;
@@ -120,7 +121,7 @@ main:not(.f):not(.l):not(.m) {
   border-radius: 4px;
 }
 
-
+/* FILME */
 #acesso.f {
   background-color: #5b305a;
   color: white;
@@ -159,7 +160,7 @@ main:not(.f):not(.l):not(.m) {
   border-radius: 8px;
 }
 
-
+/* MÚSICA */
 #acesso.m {
   background-color: #e04b5a;
   color: white;
@@ -174,7 +175,7 @@ main:not(.f):not(.l):not(.m) {
   margin: 0 10px;
 }
 
-
+/* Tabelas de conteúdo */
 #descricao {
   background-color: white;
   padding: 2em;
@@ -190,7 +191,7 @@ main:not(.f):not(.l):not(.m) {
   margin-bottom: 1em;
 }
 
-
+/* Rodapé */
 footer {
   background-color: #333;
   color: #ddd;
