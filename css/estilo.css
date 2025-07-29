@@ -65,17 +65,16 @@ main img#capa {
 
 .f main {
   background-color: #5b305a;
-  color: white;
 }
 
 .l main {
   background-color: #e49756;
-  color: white;
+  color: #fff;
 }
 
 .m main {
   background-color: #e04b5a;
-  color: white;
+  color: #fff;
 }
 
 main h1 {
@@ -211,17 +210,4 @@ footer {
   width: 24px;
   margin: 0 5px;
 }
-.f main,
-.f main * {
-  color: white !important;
-}
 
-.l main,
-.l main * {
-  color: white !important;
-}
-
-.m main,
-.m main * {
-  color: white !important;
-}
