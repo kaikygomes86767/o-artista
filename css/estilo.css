@@ -27,32 +27,32 @@ header {
 .link-menu {
   text-decoration: none;
   color: #fff;
-  background-color: #555; /* Default background for menu links */
+  background-color: #555; 
   padding: 0.5em 1em;
   border-radius: 5px;
 }
 
 .link-menu.f {
-  background-color: #5b305a; /* Color for "Filme" link */
+  background-color: #5b305a; 
 }
 
 .link-menu.l {
-  background-color: #e49756; /* Color for "Livro" link */
+  background-color: #e49756; 
 }
 
 .link-menu.m {
-  background-color: #e04b5a; /* Color for "Música" link */
+  background-color: #e04b5a; 
 }
 
 
-/* MAIN SECTION STYLES */
+
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2em;
   gap: 3em;
-  /* Removed default background here, it will be set by body classes */
+  
 }
 
 main img#capa {
@@ -64,27 +64,27 @@ main img#capa {
   max-width: 500px;
 }
 
-/* Specific background colors for main based on body classes */
+
 body.f main {
-  background-color: #5b305a; /* Background for "Filme" page */
+  background-color: #5b305a; 
   color: white;
 }
 
 body.l main {
-  background-color: #e49756; /* Background for "Livro" page */
+  background-color: #e49756; 
   color: white;
 }
 
 body.m main {
-  background-color: #e04b5a; /* Background for "Música" page */
+  background-color: #473133; 
   color: white;
 }
 
-/* Ensure all elements inside main inherit white color when a body class is active */
+
 body.f main *,
 body.l main *,
 body.m main * {
-  color: white !important; /* Use !important to ensure color is applied */
+  color: white !important; 
 }
 
 main h1 {
@@ -92,15 +92,13 @@ main h1 {
   font-size: 2.5em;
 }
 
-/* This rule was likely causing conflicts. If a body class (f, l, m) is present,
-   the specific rules above should apply. If no body class is present, this can be a fallback for "Início". */
+
 body:not(.f):not(.l):not(.m) main {
-  background-color: #333; /* Default background for "Início" or when no specific class is present */
+  background-color: #333; 
   color: #ddd;
 }
 
 
-/* Rest of your CSS remains the same */
 
 #principal {
   display: flex;
@@ -121,7 +119,7 @@ body:not(.f):not(.l):not(.m) main {
   gap: 2em;
   padding: 2em;
   flex-wrap: wrap;
-  background-color: white; /* This section below main should always be white */
+  background-color: white; 
 }
 
 .cartaz {
